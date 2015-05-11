@@ -1,2 +1,4 @@
 # PodcastSubmitter
-Automatically submit new podcast to correspoding folder of rss feed folder &amp; update the rss feed
+This is for update iTunes Podcast.
+Automatically submit new podcast to correspoding folder of rss feed folder.
+Automatically ppdate the rss feed.
