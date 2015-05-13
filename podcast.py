@@ -15,7 +15,7 @@ class Podcast(object):
 
     def __init__(self, filename, author, summary, url, mediaType = "audio/mpeg"):
         self.filename = filename
-        self.title = filename[:-4]
+        self.title = time.strftime("%Y-%m-%d %H:%M:%S")
         self.author = author
         self.subtitle = filename[:-4]
         self.summary = summary
