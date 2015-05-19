@@ -49,7 +49,8 @@ class Podcast(object):
 def submit(submitPath, podcastPath):
     pcList = []
     for filename in os.listdir(submitPath):
-        pcList.append(Podcast(filename, DEFAULT_AUTHOR, DEFAULT_SUMMARY, URL_PREFIX + filename))
+        if filename.endswith("mp3"):
+            pcList.append(Podcast(filename, DEFAULT_AUTHOR, DEFAULT_SUMMARY, URL_PREFIX + filename))
     for pc in pcList:
         pc.toRSS()
         pc.writeXML(XML_FILE_PATH)
